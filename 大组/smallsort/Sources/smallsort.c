@@ -158,8 +158,7 @@ int *CreatArray() {
 	int *arr = (int*)malloc(sizeof(int)*MAX);
 	srand((unsigned int)time(NULL));
 	for (i = 0; i < MAX; i++) {
-
-		int randNum = rand() % MAX;
+		int randNum = rand();
 		arr[i] = randNum;
 	}
 	return arr;
@@ -186,9 +185,8 @@ void Menu(){
 	printf("**        3 ---快速排序(非递归)     **\n");
 	printf("**        4 ---计数排序             **\n");
 	printf("**        5 ---基数排序             **\n");
-//	printf("**        6 ---快速排序(递归)       **\n");
-	printf("**        7 ---退出程序             **\n");
-	printf("**        8 ---清屏                 **\n");
+	printf("**        6 ---退出程序             **\n");
+	printf("**        7 ---清屏                 **\n");
 	printf("======================================\n");
 	printf("\n");
 }
